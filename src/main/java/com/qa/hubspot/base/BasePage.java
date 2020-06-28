@@ -40,6 +40,7 @@ public class BasePage {
 
 	}
 
+	
 	public Properties init_prop() {
 		prop = new Properties();
 		try {

@@ -11,6 +11,7 @@ public class HomePage extends BasePage {
 
 	By header = By.cssSelector("h1.private-header__heading.private-header__heading--solo");
 	By accountName = By.cssSelector("span.account-name");
+	// By accountName = By.className("account-name ");
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;

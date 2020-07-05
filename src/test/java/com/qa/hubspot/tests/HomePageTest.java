@@ -12,7 +12,7 @@ public class HomePageTest extends BasePageTest {
 
 	@BeforeClass
 	public void homePageSetup() {
-		homePage = loginPage.doLogin(prop.getProperty("UserName"), prop.getProperty("Password"));
+		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
 	@Test(priority = 3)
@@ -32,7 +32,7 @@ public class HomePageTest extends BasePageTest {
 	@Test(priority = 2)
 	public void verifyLoggedinUserTest() {
 		String LoggedInUser = homePage.getLoggedinUser();
-		Assert.assertEquals(LoggedInUser, prop.getProperty("AccountName"), "Logged in user is matched");
+		Assert.assertEquals(LoggedInUser, prop.getProperty("accountName"), "Logged in user is matched");
 
 	}
 

@@ -15,7 +15,7 @@ public class LoginPageTest extends BasePageTest {
 
 	@Test(priority = 3)
 	public void verifyDoLogin() {
-		loginPage.doLogin(prop.getProperty("UserName"), prop.getProperty("Password"));
+		loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
 	@Test(priority = 1)

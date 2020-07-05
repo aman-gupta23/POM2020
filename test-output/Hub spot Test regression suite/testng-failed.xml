@@ -11,22 +11,4 @@
       <class name="com.qa.hubspot.tests.HomePageTest"/>
     </classes>
   </test> <!-- home page test -->
-  <test name="home page test(failed)" parallel="tests">
-    <classes>
-      <class name="com.qa.hubspot.tests.HomePageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="verifyLoggedinUserTest"/>
-          <include name="quit"/>
-          <include name="homePageSetup"/>
-        </methods>
-      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
-      <class name="com.qa.hubspot.tests.LoginPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
-    </classes>
-  </test> <!-- home page test(failed) -->
 </suite> <!-- Failed suite [Hub spot Test regression suite] -->

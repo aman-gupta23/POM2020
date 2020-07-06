@@ -1,61 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Hub spot Test regression suite" duration-ms="24443" started-at="2020-07-05T16:40:06Z" finished-at="2020-07-05T16:40:30Z">
+  <suite name="Default suite" duration-ms="25429" started-at="2020-07-06T19:56:06Z" finished-at="2020-07-06T19:56:32Z">
     <groups>
     </groups>
-    <test name="login page test" duration-ms="18614" started-at="2020-07-05T16:40:06Z" finished-at="2020-07-05T16:40:24Z">
-      <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@19bb089b]" name="setUp" is-config="true" duration-ms="8705" started-at="2020-07-05T22:10:06Z" finished-at="2020-07-05T22:10:15Z">
+    <test name="Default test" duration-ms="25429" started-at="2020-07-06T19:56:06Z" finished-at="2020-07-06T19:56:32Z">
+      <class name="com.qa.hubspot.tests.ContactsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@71c7db30]" name="setUp" is-config="true" duration-ms="9161" started-at="2020-07-07T01:26:06Z" finished-at="2020-07-07T01:26:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySignUplinkTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@19bb089b]" name="verifySignUplinkTest" duration-ms="6406" started-at="2020-07-05T22:10:15Z" finished-at="2020-07-05T22:10:21Z">
+        <test-method status="PASS" signature="contactsSetup()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@71c7db30]" name="contactsSetup" is-config="true" duration-ms="10887" started-at="2020-07-07T01:26:15Z" finished-at="2020-07-07T01:26:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySignUplinkTest -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@19bb089b]" name="verifyLoginPageTitleTest" duration-ms="54" started-at="2020-07-05T22:10:21Z" finished-at="2020-07-05T22:10:21Z">
+        </test-method> <!-- contactsSetup -->
+        <test-method status="PASS" signature="verifyContactsTitleTest()[pri:1, instance:com.qa.hubspot.tests.ContactsPageTest@71c7db30]" name="verifyContactsTitleTest" duration-ms="644" started-at="2020-07-07T01:26:26Z" finished-at="2020-07-07T01:26:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="verifyDoLogin()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@19bb089b]" name="verifyDoLogin" duration-ms="1842" started-at="2020-07-05T22:10:21Z" finished-at="2020-07-05T22:10:23Z">
+        </test-method> <!-- verifyContactsTitleTest -->
+        <test-method status="PASS" signature="createContactstest()[pri:2, instance:com.qa.hubspot.tests.ContactsPageTest@71c7db30]" name="createContactstest" duration-ms="4000" started-at="2020-07-07T01:26:27Z" finished-at="2020-07-07T01:26:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDoLogin -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@19bb089b]" name="quit" is-config="true" duration-ms="1586" started-at="2020-07-05T22:10:23Z" finished-at="2020-07-05T22:10:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
-    </test> <!-- login page test -->
-    <test name="home page test" duration-ms="24443" started-at="2020-07-05T16:40:06Z" finished-at="2020-07-05T16:40:30Z">
-      <class name="com.qa.hubspot.tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@2752f6e2]" name="setUp" is-config="true" duration-ms="9573" started-at="2020-07-05T22:10:06Z" finished-at="2020-07-05T22:10:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homePageSetup()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@2752f6e2]" name="homePageSetup" is-config="true" duration-ms="8340" started-at="2020-07-05T22:10:15Z" finished-at="2020-07-05T22:10:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageSetup -->
-        <test-method status="PASS" signature="verifygetHomePageHeaderTest()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@2752f6e2]" name="verifygetHomePageHeaderTest" duration-ms="5700" started-at="2020-07-05T22:10:24Z" finished-at="2020-07-05T22:10:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifygetHomePageHeaderTest -->
-        <test-method status="PASS" signature="verifyLoggedinUserTest()[pri:2, instance:com.qa.hubspot.tests.HomePageTest@2752f6e2]" name="verifyLoggedinUserTest" duration-ms="86" started-at="2020-07-05T22:10:29Z" finished-at="2020-07-05T22:10:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoggedinUserTest -->
-        <test-method status="PASS" signature="verifyhomePageTitleTest()[pri:3, instance:com.qa.hubspot.tests.HomePageTest@2752f6e2]" name="verifyhomePageTitleTest" duration-ms="12" started-at="2020-07-05T22:10:30Z" finished-at="2020-07-05T22:10:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyhomePageTitleTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@2752f6e2]" name="quit" is-config="true" duration-ms="725" started-at="2020-07-05T22:10:30Z" finished-at="2020-07-05T22:10:30Z">
+        </test-method> <!-- createContactstest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@71c7db30]" name="quit" is-config="true" duration-ms="723" started-at="2020-07-07T01:26:31Z" finished-at="2020-07-07T01:26:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
-    </test> <!-- home page test -->
-  </suite> <!-- Hub spot Test regression suite -->
+      </class> <!-- com.qa.hubspot.tests.ContactsPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

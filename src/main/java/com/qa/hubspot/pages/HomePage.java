@@ -13,7 +13,8 @@ public class HomePage extends BasePage {
 
 	By header = By.cssSelector("h1.private-header__heading.private-header__heading--solo");
 	By accountName = By.cssSelector("span.account-name");
-	// By accountName = By.className("account-name ");
+	By parentContactLink = By.id("nav-primary-contacts-branch");
+	By childContactLink = By.id("nav-secondary-contacts");
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -52,4 +53,17 @@ public class HomePage extends BasePage {
 
 	}
 
+	public void clickContactsLink() {
+		
+		elementUtil.waitForElementToBeVisible(parentContactLink, 10);
+		elementUtil.doClick(parentContactLink);
+		elementUtil.waitForElementToBeVisible(childContactLink, 5);
+		elementUtil.doClick(childContactLink);
+	}
+
+	public ContactsPage goToContactsPage() {
+		// private ContactsPage goToContactsPage() {   #NAL Used
+		clickContactsLink();
+		return new ContactsPage(driver);
+	}
 }

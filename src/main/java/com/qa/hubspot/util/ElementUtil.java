@@ -44,6 +44,12 @@ public class ElementUtil {
 
 	}
 
+	public void clickWhenready(By Locator, int timeout) {
+		WebDriverWait wait = new WebDriverWait(driver, timeout);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(Locator));
+		element.click();
+	}
+
 	public WebElement waitForElementToBeVisible(By Locator, int timeout) {
 		WebElement element = getElement(Locator);
 		WebDriverWait wait = new WebDriverWait(driver, timeout);

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\amaan\AppData\Local\Temp\testng-eclipse-1200027644\testng-customsuite.xml</span>
+                    <span>C:\Users\amaan\AppData\Local\Temp\testng-eclipse-1676134012\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.hubspot.tests.ContactsPageTest" hash-for-method="createContactstest(Ayush5@ygmail.com, Ayush, Gupta, QA Trainee)">createContactstest(Ayush5@ygmail.com, Ayush, Gupta, QA Trainee)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.hubspot.tests.ContactsPageTest" hash-for-method="createContactstest">createContactstest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.hubspot.tests.ContactsPageTest" hash-for-method="createContactstest(Vyom5@ygmail.com, Vyom, Bakshi, QA Engineer)">createContactstest(Vyom5@ygmail.com, Vyom, Bakshi, QA Engineer)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.hubspot.tests.ContactsPageTest" hash-for-method="verifyContactsTitleTest">verifyContactsTitleTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.hubspot.tests.ContactsPageTest" hash-for-method="createContactstest(Akash5@ygmail.com, Akash, Verma, QA Manager)">createContactstest(Akash5@ygmail.com, Akash, Verma, QA Manager)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.hubspot.tests.ContactsPageTest" hash-for-method="createContactstest(ganesh5@ygmail.com, Ganesh, Kumar, QA Director)">createContactstest(ganesh5@ygmail.com, Ganesh, Kumar, QA Director)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.hubspot.tests.ContactsPageTest" hash-for-method="createContactstest(Akshita5@ygmail.com, Akshita, Singh, QA Lead)">createContactstest(Akshita5@ygmail.com, Akshita, Singh, QA Lead)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,6 +146,70 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.hubspot.tests.ContactsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createContactstest(Ayush5@ygmail.com, Ayush, Gupta, QA Trainee)">
+                  </a> <!-- createContactstest(Ayush5@ygmail.com, Ayush, Gupta, QA Trainee) -->
+                  <span class="method-name">createContactstest</span>
+                  <span class="parameters">(Ayush5@ygmail.com, Ayush, Gupta, QA Trainee)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=83.0.4103.116)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RCO6D0F&apos;, ip: &apos;192.168.43.241&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\amaan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59524}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 3510f2592681e10a9fc2ad7e4bd5f1e2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.qa.hubspot.util.ElementUtil.doSendKeys(ElementUtil.java:25)
+	at com.qa.hubspot.pages.ContactsPage.createContacts(ContactsPage.java:53)
+	at com.qa.hubspot.tests.ContactsPageTest.createContactstest(ContactsPageTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -130,16 +218,34 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createContactstest">
-                  </a> <!-- createContactstest -->
+                  <a name="createContactstest(Vyom5@ygmail.com, Vyom, Bakshi, QA Engineer)">
+                  </a> <!-- createContactstest(Vyom5@ygmail.com, Vyom, Bakshi, QA Engineer) -->
                   <span class="method-name">createContactstest</span>
+                  <span class="parameters">(Vyom5@ygmail.com, Vyom, Bakshi, QA Engineer)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyContactsTitleTest">
-                  </a> <!-- verifyContactsTitleTest -->
-                  <span class="method-name">verifyContactsTitleTest</span>
+                  <a name="createContactstest(Akash5@ygmail.com, Akash, Verma, QA Manager)">
+                  </a> <!-- createContactstest(Akash5@ygmail.com, Akash, Verma, QA Manager) -->
+                  <span class="method-name">createContactstest</span>
+                  <span class="parameters">(Akash5@ygmail.com, Akash, Verma, QA Manager)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createContactstest(ganesh5@ygmail.com, Ganesh, Kumar, QA Director)">
+                  </a> <!-- createContactstest(ganesh5@ygmail.com, Ganesh, Kumar, QA Director) -->
+                  <span class="method-name">createContactstest</span>
+                  <span class="parameters">(ganesh5@ygmail.com, Ganesh, Kumar, QA Director)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createContactstest(Akshita5@ygmail.com, Akshita, Singh, QA Lead)">
+                  </a> <!-- createContactstest(Akshita5@ygmail.com, Akshita, Singh, QA Lead) -->
+                  <span class="method-name">createContactstest</span>
+                  <span class="parameters">(Akshita5@ygmail.com, Akshita, Singh, QA Lead)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +253,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\amaan\AppData\Local\Temp\testng-eclipse-1200027644\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\amaan\AppData\Local\Temp\testng-eclipse-1676134012\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -159,6 +265,18 @@
       &lt;class name=&quot;com.qa.hubspot.tests.ContactsPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
+  &lt;test name=&quot;Default test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.hubspot.tests.ContactsPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;quit&quot;/&gt;
+          &lt;include name=&quot;createContactstest&quot; invocation-numbers=&quot;4&quot;/&gt;
+          &lt;include name=&quot;contactsSetup&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.hubspot.tests.ContactsPageTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,6 +289,9 @@
             <ul>
               <li>
                 <span class="test-name">Default test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Default test(failed) (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,20 +317,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createContactstest')
 data.setCell(0, 2, 'com.qa.hubspot.tests.ContactsPageTest')
-data.setCell(0, 3, 4000);
+data.setCell(0, 3, 18762);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyContactsTitleTest')
+data.setCell(1, 1, 'createContactstest')
 data.setCell(1, 2, 'com.qa.hubspot.tests.ContactsPageTest')
-data.setCell(1, 3, 644);
+data.setCell(1, 3, 18752);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createContactstest')
+data.setCell(2, 2, 'com.qa.hubspot.tests.ContactsPageTest')
+data.setCell(2, 3, 18705);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createContactstest')
+data.setCell(3, 2, 'com.qa.hubspot.tests.ContactsPageTest')
+data.setCell(3, 3, 18493);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createContactstest')
+data.setCell(4, 2, 'com.qa.hubspot.tests.ContactsPageTest')
+data.setCell(4, 3, 7471);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -242,19 +375,33 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">contactsSetup</span>
-                <span class="method-start">9166 ms</span>
+                <span class="method-start">8259 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyContactsTitleTest</span>
-                <span class="method-start">20056 ms</span>
+                <span class="method-name">createContactstest(ganesh5@ygmail.com, Ganesh, Kumar, QA Director)</span>
+                <span class="method-start">25646 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">createContactstest</span>
-                <span class="method-start">20703 ms</span>
+                <span class="method-name">createContactstest(Akash5@ygmail.com, Akash, Verma, QA Manager)</span>
+                <span class="method-start">44409 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createContactstest(Akshita5@ygmail.com, Akshita, Singh, QA Lead)</span>
+                <span class="method-start">63162 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createContactstest(Vyom5@ygmail.com, Vyom, Bakshi, QA Engineer)</span>
+                <span class="method-start">81655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createContactstest(Ayush5@ygmail.com, Ayush, Gupta, QA Trainee)</span>
+                <span class="method-start">100361 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">quit</span>
-                <span class="method-start">24704 ms</span>
+                <span class="method-start">107839 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

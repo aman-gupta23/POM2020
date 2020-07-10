@@ -8,4 +8,5 @@ public class Constants {
 	public static final String Contacts_Title = "Contacts";
 	public static final String Contacts_Header = "Contacts";
 
+	public static final String Contacts_Sheet_Name = "Contacts";
 }

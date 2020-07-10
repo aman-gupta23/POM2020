@@ -54,10 +54,14 @@ public class HomePage extends BasePage {
 	}
 
 	public void clickContactsLink() {
-		
-		elementUtil.waitForElementToBeVisible(parentContactLink, 10);
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		elementUtil.waitForElementToBeVisible(parentContactLink, 20);
 		elementUtil.doClick(parentContactLink);
-		elementUtil.waitForElementToBeVisible(childContactLink, 5);
+		elementUtil.waitForElementToBeVisible(childContactLink, 20);
 		elementUtil.doClick(childContactLink);
 	}
 

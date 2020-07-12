@@ -31,6 +31,8 @@ public class LoginPage extends BasePage {
 
 	public boolean verifySignUplink() {
 		// return driver.findElement(Signup).isDisplayed();
+		elementUtil.waitForElementPresent(Signup, 5);
+
 		return elementUtil.doIsDisplayed(Signup);
 	}
 

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Hub spot Test regression suite]" parallel="tests">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Hub spot Test regression suite]">
+  <listeners>
+    <listener class-name="com.qa.hubspot.listeners.TestAllureListener"/>
+  </listeners>
   <test name="login page test">
     <classes>
       <class name="com.qa.hubspot.tests.LoginPageTest"/>
@@ -11,34 +14,4 @@
       <class name="com.qa.hubspot.tests.HomePageTest"/>
     </classes>
   </test> <!-- home page test -->
-  <test name="Contacts page test">
-    <classes>
-      <class name="com.qa.hubspot.tests.ContactsPageTest"/>
-    </classes>
-  </test> <!-- Contacts page test -->
-  <test name="Contacts page test(failed)" parallel="tests">
-    <classes>
-      <class name="com.qa.hubspot.tests.ContactsPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="createContactstest"/>
-          <include name="contactsSetup"/>
-          <include name="verifyContactsTitleTest"/>
-        </methods>
-      </class> <!-- com.qa.hubspot.tests.ContactsPageTest -->
-      <class name="com.qa.hubspot.tests.HomePageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="quit"/>
-          <include name="homePageSetup"/>
-        </methods>
-      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
-      <class name="com.qa.hubspot.tests.LoginPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
-    </classes>
-  </test> <!-- Contacts page test(failed) -->
 </suite> <!-- Failed suite [Hub spot Test regression suite] -->

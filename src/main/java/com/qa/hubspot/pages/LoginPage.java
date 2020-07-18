@@ -7,6 +7,8 @@ import com.qa.hubspot.base.BasePage;
 import com.qa.hubspot.util.Constants;
 import com.qa.hubspot.util.ElementUtil;
 
+import io.qameta.allure.Step;
+
 public class LoginPage extends BasePage {
 
 	private WebDriver driver;
@@ -24,19 +26,31 @@ public class LoginPage extends BasePage {
 	}
 
 	// Page Actions
+	@Step("CHECK LOGIN PAGE TITLE")
 	public String getLoginTitle() {
 		// return driver.getTitle();
 		return elementUtil.waitForTitleToBePresent(Constants.Login_Page_Title, 10);
 	}
 
+	@Step("CHECK SIGNUP LINK ON LOGIN PAGE")
 	public boolean verifySignUplink() {
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		// return driver.findElement(Signup).isDisplayed();
-		elementUtil.waitForElementPresent(Signup, 5);
-
+		elementUtil.waitForElementPresent(Signup, 10);
 		return elementUtil.doIsDisplayed(Signup);
 	}
 
+	@Step("CHECK LOGIN METHOD WITH CREDENTIALS username: {0} and password:{1} ")
 	public HomePage doLogin(String username, String password) {
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		// driver.findElement(this.username).sendKeys(username);
 		// driver.findElement(this.password).sendKeys(password);
 		// driver.findElement(this.loginButton).click();

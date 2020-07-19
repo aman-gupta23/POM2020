@@ -34,11 +34,7 @@ public class LoginPage extends BasePage {
 
 	@Step("CHECK SIGNUP LINK ON LOGIN PAGE")
 	public boolean verifySignUplink() {
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	
 		// return driver.findElement(Signup).isDisplayed();
 		elementUtil.waitForElementPresent(Signup, 10);
 		return elementUtil.doIsDisplayed(Signup);
@@ -46,11 +42,7 @@ public class LoginPage extends BasePage {
 
 	@Step("CHECK LOGIN METHOD WITH CREDENTIALS username: {0} and password:{1} ")
 	public HomePage doLogin(String username, String password) {
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	
 		// driver.findElement(this.username).sendKeys(username);
 		// driver.findElement(this.password).sendKeys(password);
 		// driver.findElement(this.loginButton).click();

@@ -4,8 +4,6 @@
 <suite name="Hub spot Test regression suite" verbose="3">
 
 	<listeners>
-		<!-- <listener class-name="com.qa.hubspot.listeners.ExtentReportListener"/> -->
-		<!-- <listener class-name="com.qa.hubspot.listeners.pdfListener" /> -->
 		<listener class-name="com.qa.hubspot.listeners.TestAllureListener" />
 	</listeners>
 
@@ -15,11 +13,8 @@
 		</classes>
 	</test>
 
-	<test name="home page test">
-		<classes>
-			<class name="com.qa.hubspot.tests.HomePageTest" />
-		</classes>
-	</test>
+	<!-- <test name="home page test"> <classes> <class name="com.qa.hubspot.tests.HomePageTest" 
+		/> </classes> </test> -->
 
 	<!-- <test name="Contacts page test"> <classes> <class name="com.qa.hubspot.tests.ContactsPageTest" 
 		/> </classes> </test> -->
